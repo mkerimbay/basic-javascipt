@@ -1,0 +1,10 @@
+npm init -y  # -y to skip all questions
+npm i express
+touch index.js
+npm i nodemon
+    pachage.json, scripts, start
+    npm run start
+
+[Views]
+mkdir views
+touch home.ejs
