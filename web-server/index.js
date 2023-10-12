@@ -1,20 +1,25 @@
 //  this is a https web-server
-const https = require('https');
-const express = require('express');
-app = express();
+// const https = require('https');
+// const express = require('express');
+// const startUp = require('./routes/startup');
 
 
+import https from "https"
+import fs from "fs"
+import express from "express"
+import {startUp} from "./routes/startup.js"
+import { getLocation } from "./routes/getLocation.js"
 
-const startUp = require('./routes/startup');
-app.use('/', startUp)
+import dotenv from "dotenv";
+dotenv.config();
 
 const port = 8080
+
+const app = express();
+app.use('/', startUp)
+app.use('/', getLocation)
 app.use(express.json());
 
-
-
-
-const fs = require('fs');
 
 const httpsOptions = {
     key: fs.readFileSync('key.pem'),

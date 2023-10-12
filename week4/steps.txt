@@ -2,7 +2,7 @@ npm init -y  # -y to skip all questions
 npm i express
 touch index.js
 npm i nodemon
-    pachage.json, scripts, start
+    pachage.json, scripts, start: nodemon index.js
     npm run start
 
 [Views]

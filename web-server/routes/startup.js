@@ -1,5 +1,8 @@
-const express = require('express');
-const startUp = express.Router("express");
+// const express = require('express');
+// const startUp = express.Router("express");
+export const startUp = express.Router()
+
+import express from "express"
 
 startUp.get('/', (req, res) => {
     res.send('Hello World!');
@@ -36,16 +39,16 @@ startUp.get('/set-header', (req, res) => {
     res.send({ message: 'This is a GET request' });
 });
 
-startUp.get('/get-device', (req, res) => {
-    const device = req.header('User-Agent');
-    res.send({device})
-});
+// startUp.get('/get-device', (req, res) => {
+//     const device = req.header('User-Agent');
+//     res.send({device})
+// });
 
-startUp.get('/get-ip', (req, res) => {
-    const ipAddress = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
-    res.send({ipAddress});
+// startUp.get('/get-ip', (req, res) => {
+//     const ipAddress = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+//     res.send({ipAddress});
 
-});
+// });
   
 
-module.exports = startUp;
+// module.exports = startUp;
