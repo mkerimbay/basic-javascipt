@@ -21,7 +21,7 @@ Request body:
 {
   "flightNumber": "TK351"
 }
-```bash
+```
 
 Response body:
 ```bash
