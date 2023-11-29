@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.article-header {
+  color: #FFFFFF;
+  background: #912C22;
+  text-shadow: 0 0 10px #FFFFFF;
+  color: #FFFFFF;
+  background: #912C22;
+  }
+
+.header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.footer {
+  background-color: #282c34;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.category {
+  color: #FFFFFF;
+  background: #333333;
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+  color: #FFFFFF;
+  background: #333333;
+  }
+
+  .text-area {
+    border: 5px solid #1C6EA4;
+    border-radius: 10px;
+  }
